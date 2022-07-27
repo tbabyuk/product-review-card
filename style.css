@@ -18,22 +18,19 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .product-container {
     width: 600px;
     height: 450px;
-    /* border-radius: 15px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
 .product-left {
     background-image: url('./images/image-product-desktop.jpg');
     background-size: cover;
+    background-position: center;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
 }
 
 .product-right {
@@ -102,3 +99,32 @@ body {
     background-color: hsl(158, 36%, 17%)
 }
 
+/* ================================================== */
+
+@media screen and (max-width: 600px) {
+
+    .product-container {
+        width: 355px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-left {
+        background-image: url('./images/image-product-mobile.jpg');
+        height: 250px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .product-right {
+        height: 390px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .product-price span {
+        left: 50%;
+        top: 30%;
+    }
+}
