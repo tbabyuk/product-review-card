@@ -19,7 +19,7 @@ body {
 }
 
 .product-container {
-    width: 600px;
+    max-width: 600px;
     height: 450px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,8 +106,10 @@ body {
     .product-container {
         width: 355px;
         height: auto;
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .product-left {
